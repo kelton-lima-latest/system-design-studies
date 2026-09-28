@@ -37,4 +37,17 @@ export const MODULES: ModuleMeta[] = [
     accentClass: "border-l-amber-500",
     docsPath: "../examples/site-estatico-cloudfront-s3/README.md",
   },
+  {
+    slug: "api-privada-gateway",
+    order: "03",
+    badge: "API Gateway · OAuth2/OIDC · Rede privada",
+    title: "API Privada Exposta a Parceiros",
+    summary:
+      "API interna com login federado via Google/Microsoft, exposta a serviços de parceiros só por VPN/PrivateLink — nunca pela internet pública.",
+    description:
+      "Login de usuário delega autenticação a um IdP externo (Google/Microsoft) via um BFF; serviços de parceiros autenticam com client credentials + mTLS através de um canal de rede privado. O API Gateway nunca tem endpoint público.",
+    tags: ["API Gateway", "OAuth2", "OIDC", "Zero Trust"],
+    accentClass: "border-l-violet-500",
+    docsPath: "../examples/api-privada-gateway/README.md",
+  },
 ];

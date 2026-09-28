@@ -43,3 +43,4 @@ Diretórios de exemplo em `kebab-case`, nomeando o problema e não a tecnologia,
 
 - [cdc-kafka-debezium-msk](examples/cdc-kafka-debezium-msk/README.md) — simulador: `app/` → `#/cdc-kafka`
 - [site-estatico-cloudfront-s3](examples/site-estatico-cloudfront-s3/README.md) — simulador: `app/` → `#/cloudfront-s3`
+- [api-privada-gateway](examples/api-privada-gateway/README.md) — simulador: `app/` → `#/api-privada-gateway`

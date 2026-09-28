@@ -3,6 +3,7 @@ import { MODULES } from "./catalog";
 import { renderHome } from "./home";
 import { mountCdcKafka } from "./modules/cdc-kafka/view";
 import { mountCloudfrontS3 } from "./modules/cloudfront-s3/view";
+import { mountApiPrivadaGateway } from "./modules/api-privada-gateway/view";
 
 const headerEl = document.querySelector<HTMLElement>("#app-header")!;
 const mainEl = document.querySelector<HTMLElement>("#app-main")!;
@@ -10,6 +11,7 @@ const mainEl = document.querySelector<HTMLElement>("#app-main")!;
 const registry: Record<string, (container: HTMLElement) => void> = {
   "cdc-kafka": mountCdcKafka,
   "cloudfront-s3": mountCloudfrontS3,
+  "api-privada-gateway": mountApiPrivadaGateway,
 };
 
 function renderHomeHeader(): void {

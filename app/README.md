@@ -12,6 +12,7 @@ Contexto e decisão de arquitetura de cada cenário estão no `README.md` dentro
 
 - `#/cdc-kafka` — Change Data Capture com Debezium + Kafka (AWS MSK). Doc: [`../examples/cdc-kafka-debezium-msk/README.md`](../examples/cdc-kafka-debezium-msk/README.md)
 - `#/cloudfront-s3` — Site estático em CloudFront + S3, domínio registro.br delegado ao Route 53. Doc: [`../examples/site-estatico-cloudfront-s3/README.md`](../examples/site-estatico-cloudfront-s3/README.md)
+- `#/api-privada-gateway` — API privada exposta a parceiros via API Gateway, com login federado Google/Microsoft. Doc: [`../examples/api-privada-gateway/README.md`](../examples/api-privada-gateway/README.md)
 
 ## Rodando localmente
 
@@ -90,8 +91,11 @@ app/
 │       │   ├── view.ts      # mountCdcKafka(container)
 │       │   ├── data.ts
 │       │   └── pipeline.ts
-│       └── cloudfront-s3/
-│           ├── view.ts      # mountCloudfrontS3(container)
+│       ├── cloudfront-s3/
+│       │   ├── view.ts      # mountCloudfrontS3(container)
+│       │   └── data.ts
+│       └── api-privada-gateway/
+│           ├── view.ts      # mountApiPrivadaGateway(container)
 │           └── data.ts
 ├── tailwind.config.js      # paleta ink/teal/amber/coral/violet e fontes
 └── vite.config.ts
